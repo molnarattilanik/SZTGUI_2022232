@@ -1,4 +1,3 @@
-
 # Szoftvertechnológia és Grafikus felhasználói interfész tervezés
 
 Az adott github repo az SZTGUI tárgy 2022/23/2 félév órai kódjait és tárgyi követelményeit tartalmazza.
@@ -20,7 +19,7 @@ WPF kliens:
 - Rétegződés (UI + VM + Logic + Restservice commandok)
 - Minden CRUD és NONCRUD művelet elérhető a kliensből
 
-JS kliens: 
+JS kliens:
 
 - Repository neve: **ABC111_HFT_2022232.JSClient**
 - index.html, index.css, index.js
@@ -30,13 +29,15 @@ JS kliens:
 
 Cél
 
-A hallgatóknak egy játékot kell fejleszteniük WPF-ben a tanult technikák (FrameworkElement) segítségével! A csapatokat 3 fő alkotja, melyeket a laborvezető határoz meg és a tagoknak egy kurzushoz kell tartozniuk. 
-A játékot GIT verziókövető rendszer segítségével kell elkészíteni és a github.com oldalon hostolni.
+A hallgatóknak egy játékot kell fejleszteniük WPF-ben a tanult technikák (FrameworkElement) segítségével! A csapatokat 3 fő alkotja, melyeket a laborvezető határoz meg és a tagoknak egy kurzushoz kell tartozniuk.
+A játékot GIT verziókövető rendszer segítségével kell elkészíteni és a github.com oldalon hostolni. Repository-hoz a [molnarattilanik] felhasználót hozzá kell adni.
 
- # Kapcsolattartás
+# Kapcsolattartás
+
 Teams csoport
 
-****
+---
+
 ## Molnár Attila
 
 Egyetemi Gyakornok
@@ -44,10 +45,6 @@ molnar.attila@nik.uni-obuda.hu
 Óbudai Egyetem Neumann János Informatikai Kar  
 Szoftvertervezés és -fejlesztés Intézet
 
-
-
 [//]: #
-[molnarattilanik]: <https://github.com/molnarattilanik>
-[oenikprog]: <https://github.com/oenikprog>
-
-
+[molnarattilanik]: https://github.com/molnarattilanik
+[oenikprog]: https://github.com/oenikprog
