@@ -1,0 +1,14 @@
+﻿<Window x:Class="HelloWorld.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HelloWorld"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="lbl_greeting" Content="" HorizontalAlignment="Left" Margin="232,217,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.183,-1.504" Height="49" Width="289" FontSize="24"/>
+        <Button Content="Say hello" Margin="150,56,197,337" Click="Button_Click"/>
+        <TextBox x:Name="txtbox_name" HorizontalAlignment="Left" Margin="304,149,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Window>

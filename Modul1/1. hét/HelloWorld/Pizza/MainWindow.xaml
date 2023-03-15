@@ -1,0 +1,30 @@
+﻿<Window x:Class="Pizza.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pizza"
+        mc:Ignorable="d"
+        Title="Pizza Ordering" Height="450" Width="800"
+        Closing="Window_Closing">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        
+        <StackPanel Grid.Column="0">
+            <Label Content="Megrendelő" Background="LightBlue"/>
+            <TextBox x:Name="personName_textBox" Padding="10" />
+            <Label Content="Pizza Neve: " Background="LightBlue"/>
+            <ComboBox x:Name="pizzaName_comboBox" Padding="10" />
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <RadioButton x:Name="tomato_radioButton" Content="paradicsomos" IsChecked="True" Margin="10"/>
+                <RadioButton Content="tejfölös" Margin="10"/>
+            </StackPanel>
+            <Button Content="Rendelés" Click="Button_Click"></Button>
+        </StackPanel>
+        
+        <ListBox x:Name="orders_listBox" Grid.Column="1" />
+    </Grid>
+</Window>

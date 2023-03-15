@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "3re59/5HRLADNQNFJLUfp5u6NogRC6ZA08laBGe4ZWTOh3f/k/no767WM7F958vwGAfaUjH534rijRE2DNcugA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Attila\\Documents\\GUI22232\\HelloWorld\\Pizza\\Pizza.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Attila\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
