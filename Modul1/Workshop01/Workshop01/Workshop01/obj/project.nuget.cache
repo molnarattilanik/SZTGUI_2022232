@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "6UU+BzMxPQwh1ts7Q5tqPd0K8UqonZCHWe7SMyIDxyTbrts4EQsqkHfFfLquKqK+I1Lm7dMHm7MhP5LzwLN5+A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\attila.molnar\\source\\repos\\Workshop01\\Workshop01\\Workshop01.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\attila.molnar\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
