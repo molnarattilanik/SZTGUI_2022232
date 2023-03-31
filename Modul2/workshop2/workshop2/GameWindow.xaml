@@ -1,0 +1,17 @@
+﻿<Window x:Class="workshop2.GameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:workshop2"
+        mc:Ignorable="d"
+        Title="GameWindow" Height="450" Width="800" MouseLeftButtonDown="Window_MouseLeftButtonDown" Closing="Window_Closing">
+    <StackPanel>
+        <Label x:Name="lbl_time" Content="60" HorizontalContentAlignment="Center" FontSize="60" Margin="10" />
+        <Label x:Name="lbl_question" Content="Kérdés" Background="LightBlue" Padding="10" Margin="0,0,0,10" />
+        <Label Background="LightGray" HorizontalContentAlignment="Center" x:Name="btn1" Content="Válasz A" Margin="10" Padding="10" />
+        <Label Background="LightGray" HorizontalContentAlignment="Center" x:Name="btn2" Content="Válasz B" Margin="10" Padding="10" />
+        <Label Background="LightGray" HorizontalContentAlignment="Center" x:Name="btn3" Content="Válasz C" Margin="10" Padding="10" />
+        <Label Background="LightGray" HorizontalContentAlignment="Center" x:Name="btn4" Content="Válasz D" Margin="10" Padding="10" />
+    </StackPanel>
+</Window>
