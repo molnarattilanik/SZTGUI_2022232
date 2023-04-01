@@ -69,21 +69,6 @@ namespace ArmyEditor.ViewModels
             }
         }
 
-        public static bool IsInDesignMode
-        {
-            get
-            {
-                var prop = DesignerProperties.IsInDesignModeProperty;
-                return (bool)DependencyPropertyDescriptor.FromProperty(prop, typeof(FrameworkElement)).Metadata.DefaultValue;
-            }
-        }
-
-        public MainWindowViewModel()
-            : this(IsInDesignMode ? null : Ioc.Default.GetService<IArmyLogic>())
-        {
-
-        }
-
         public MainWindowViewModel(IArmyLogic logic)
         {
             this.logic = logic;
