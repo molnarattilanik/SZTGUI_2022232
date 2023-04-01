@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "AZ7gZBozhGLGjH6Jw8yOk47mhWeGMy5xkKm7ocMjrxjhXfIJyIkYlMosfY2ij7SUlmKFCqRG/7WN3T/kWB9ilw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Attila\\Documents\\GitHub\\SZTGUI_2022232\\Modul4\\ArmyEditor\\ArmyEditor\\ArmyEditor.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Attila\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
+    "C:\\Users\\Attila\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Attila\\.nuget\\packages\\microsoft.toolkit.mvvm\\7.1.2\\microsoft.toolkit.mvvm.7.1.2.nupkg.sha512",
+    "C:\\Users\\Attila\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
