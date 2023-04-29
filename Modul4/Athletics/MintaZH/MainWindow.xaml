@@ -1,0 +1,81 @@
+﻿<Window x:Class="MintaZH.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MintaZH"
+        xmlns:vm="clr-namespace:MintaZH.ViewModels"
+        xmlns:converter="clr-namespace:MintaZH.Converter"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <vm:MainWindowViewModel />
+    </Window.DataContext>
+    <Window.Resources>
+        <converter:CanRaceConverter x:Key="boolToColor" />
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox Grid.Column="0"
+                 ItemsSource="{Binding Athletes}"
+                 SelectedItem="{Binding SelectedAthlete}"
+                 HorizontalContentAlignment="Stretch">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="Black" BorderThickness="1">
+                        <Grid Background="{Binding IsValid, Converter={StaticResource boolToColor}}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*" />
+                                <ColumnDefinition Width="1*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="1*"/>
+                            </Grid.RowDefinitions>
+                            <Label Content="{Binding Name}" FontSize="14" FontWeight="Bold"/>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <ListBox Grid.Column="1"
+                 ItemsSource="{Binding CompetetionEvent}"
+                 SelectedItem="{Binding SelectedFromComptetion}"
+                 HorizontalContentAlignment="Stretch">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="Black" BorderThickness="1">
+                        <Grid Background="{Binding IsValid, Converter={StaticResource boolToColor}}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*" />
+                                <ColumnDefinition Width="1*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="1*"/>
+                            </Grid.RowDefinitions>
+                            <Label Content="{Binding Name}" FontSize="14" FontWeight="Bold"/>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <StackPanel Grid.Column="2">
+            <Button Content="Load " Command="{Binding LoadAthletes}"  Margin="10" Padding="10" />
+            <Label Content="{Binding AthleteSumMarketValue}"  ContentStringFormat="Versenyzők összértéke {0}" Margin="10" Padding="10" />
+            <Button Content="Add athlete" Command="{Binding AddCommand}" Margin="10" Padding="10"/>
+            <Button Content="Remove athlete" Command="{Binding DeleteCommand}" Margin="10" Padding="10"/>
+            <Button Content="Details" Command="{Binding EditCommand}" Margin="10" Padding="10"/>
+            <Label Content="{Binding AllAthlete}" ContentStringFormat="Versenyzők száma {0}" Margin="10" Padding="10"/>
+            <Label Content="Compatetion Name" Margin="10" Padding="10" />
+            <TextBox Text="{Binding FileName, UpdateSourceTrigger=PropertyChanged}" Margin="10" Padding="10"/>
+            <Label Content="Compatetion Name" Margin="10" Padding="10" />
+            <TextBox Text="{Binding DateTime, UpdateSourceTrigger=PropertyChanged}" Margin="10" Padding="10"/>
+            <Button Content="Save " Command="{Binding SaveCommand}"  Margin="10" Padding="10" />
+        </StackPanel>
+    </Grid>
+</Window>
